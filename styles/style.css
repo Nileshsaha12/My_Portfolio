@@ -402,7 +402,7 @@ h3.my-profession{
     background-color: var(--bg-black-50);
     height:7px;
     border-radius: 4px;
-    width: 100%;
+    width: 250%;
     position: relative;
 }
 .about .about-content .skills .skill-item .progress .progress-in{
