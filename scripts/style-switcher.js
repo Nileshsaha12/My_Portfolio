@@ -34,6 +34,6 @@ window.addEventListener("load", ()=> {
         dayNight.querySelector("i").classList.add("fa-sun");
     }
     else{
-        dayNight.querySelector("i").classList.add(fa-moon)
+        dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
