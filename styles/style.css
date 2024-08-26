@@ -784,3 +784,12 @@ h3.my-profession{
         max-width:100%;
     }
 }
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #d9cfcf;
+    font-weight: 300;
+    margin-top: 20px;
+}
