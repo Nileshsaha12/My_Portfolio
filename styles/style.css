@@ -810,4 +810,5 @@ h3.my-profession{
     border-radius: 5px;
    text-align: center;
    margin-top: 10px;
+   color: var(--text-black-900);
 }
