@@ -449,6 +449,13 @@
                       alt="Airline Ticket Booking System"
                     />
                   </div>
+                  <div class="layer">
+                    <h3>Airline Ticket Booking System</h3>
+                    <p>
+                      A platform that facilitates seamless flight reservations by allowing users to search for, book, and manage airline tickets.
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item padd-15">
@@ -459,12 +466,26 @@
                       alt="Library Management System"
                     />
                   </div>
+                  <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>
+                      An application designed to manage book inventory, user accounts, and borrowing transactions for efficient library operations.
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item padd-15">
                 <div class="portfolio-item-inner shadow-dark">
                   <div class="portfolio-img">
                     <img src="img/weathe-app.webp" alt="Weather App" />
+                  </div>
+                  <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>
+                      A web-based application that provides real-time weather updates and forecasts based on user-selected locations.
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
                   </div>
                 </div>
               </div>
@@ -473,6 +494,13 @@
                   <div class="portfolio-img">
                     <img src="img/portfolio.jpg" alt="My Portfolio" />
                   </div>
+                  <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>
+                      A personal portfolio website showcasing projects, skills, and education in a clean and organized manner.
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item padd-15">
@@ -480,12 +508,26 @@
                   <div class="portfolio-img">
                     <img src="img/tic-tac-toe-scaled.jpg" alt="Tic-Tac-Toe" />
                   </div>
+                  <div class="layer">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>
+                      A classic two-player game where users can play Tic-Tac-Toe against each other with a simple and interactive interface.
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="portfolio-item padd-15">
                 <div class="portfolio-item-inner shadow-dark">
                   <div class="portfolio-img">
                     <img src="img/amazon.jpg" alt="Amazon Clone" />
+                  </div>
+                  <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>
+                      A frontend web application replicating the user interface and key features of Amazon's e-commerce platform .
+                    </p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
                   </div>
                 </div>
               </div>
@@ -549,7 +591,8 @@
                           type="text"
                           name="Name"
                           class="form-control"
-                          placeholder="Name" required
+                          placeholder="Name"
+                          required
                         />
                       </div>
                     </div>
@@ -559,7 +602,8 @@
                           type="email"
                           name="Email"
                           class="form-control"
-                          placeholder="Email" required
+                          placeholder="Email"
+                          required
                         />
                       </div>
                     </div>
@@ -571,7 +615,8 @@
                           type="text"
                           name="Subject"
                           class="form-control"
-                          placeholder="Subject" required
+                          placeholder="Subject"
+                          required
                         />
                       </div>
                     </div>
@@ -582,7 +627,8 @@
                         <textarea
                           name="Message"
                           class="form-control"
-                          placeholder="Message" required
+                          placeholder="Message"
+                          required
                         ></textarea>
                       </div>
                     </div>
@@ -632,16 +678,16 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbyMjyto6Z0ELhDnVQQtq7uX62_AhOnQohql76zJmJ7ImjZ_vhD6dVp7lItmstRLOMtm7w/exec";
       const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg")
+      const msg = document.getElementById("msg");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML="Thank you for your interest !!"
+            msg.innerHTML = "Thank you for your interest !!";
             setTimeout(() => {
-              msg.innerHTML=""
-            },2000)
-            form.reset()
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
